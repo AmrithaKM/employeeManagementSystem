@@ -20,9 +20,6 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    // Get employee Details
-
-
     @CrossOrigin(origins = "*") // You can specify allowed origins here
     @GetMapping("/allEmployees")
     public ResponseEntity<List<EmployeeDTO>> getAllEmployees() {
